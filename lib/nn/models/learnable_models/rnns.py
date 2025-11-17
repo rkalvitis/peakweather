@@ -18,7 +18,7 @@ class GlobalLocalRNNModel(TimeThenGraphIsoModel):
                 #  cached: bool = False,
                  activation: str = 'elu',
                  noise_mode: Literal["lin", "multi", "add", "none"] = "lin",
-                #  time_skip_connect: bool = False
+                time_skip_connect: bool = False
                  ):
         super(GlobalLocalRNNModel, self).__init__(
             input_size=input_size, 
@@ -38,4 +38,4 @@ class GlobalLocalRNNModel(TimeThenGraphIsoModel):
             cached=False, 
             activation=activation, 
             noise_mode=noise_mode, 
-            time_skip_connect=False)
+            time_skip_connect=time_skip_connect)

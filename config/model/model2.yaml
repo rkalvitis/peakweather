@@ -1,0 +1,19 @@
+# @package _global_
+
+#### Model params #############################################################
+model:
+  name: model2
+  hparams:
+    hidden_size: 128
+    emb_size: 32
+    add_embedding_before: ['encoding', 'decoding']
+    time_layers: 2
+    graph_layers: 6     
+    activation: 'elu'
+    noise_mode: 'lin'
+    time_skip_connect: True
+
+dataset:
+  connectivity:
+    layout: csr
+

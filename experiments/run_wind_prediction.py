@@ -37,6 +37,27 @@ def get_model_class(model_str):
         model = ICONDummyModel
     elif model_str == 'rnn':
         model = tsl_models.RNNModel
+    elif model_str == 'model0':
+        model = models.SimpleGRUBaseline
+    elif model_str == 'model1':
+        model = models.GlobalLocalRNNModel
+    elif model_str == 'model2':
+        # Baseline STGNN: Time-then-Graph isotropic model
+        model = models.TimeThenGraphIsoModel
+    elif model_str == 'model3':
+        # GNN Encoder-Processor-Decoder style via isotropic time-then-graph model
+        model = models.TimeThenGraphIsoModel
+    elif model_str == 'stgnn':
+        # Generic SpatioTemporal GNN: time-then-graph isotropic variant
+        model = models.TimeThenGraphIsoModel
+    elif model_str == 'hydrology_temp':
+        model = models.HydrologyTempModel
+    elif model_str == 'stgcn_lstm':
+        # Exact Graph->Time pipeline: STGCN then LSTM then FC
+        model = models.STGCN_LSTM
+    elif model_str == 'stgcn_lstm_longh':
+        # Exact Graph->Time pipeline: STGCN then LSTM then FC
+        model = models.STGCN_LSTM
     else:
         raise NotImplementedError(f'Model "{model_str}" not available.')
     return model
@@ -80,8 +101,18 @@ def run(cfg: DictConfig):
     ########################################
     # Get Dataset                          #
     ########################################
-    dataset = PeakWeather(**cfg.dataset.hparams,
-                          extended_nwp_vars = ["ew_wind", "nw_wind"] if cfg.nwp_test_set else None)
+    
+
+    # Get extended_nwp_vars and extended_topo_vars from config if available
+    hparams = dict(cfg.dataset.hparams)
+    extended_nwp_vars = hparams.pop('extended_nwp_vars', None)
+    extended_topo_vars = hparams.pop('extended_topo_vars', "none")
+    if extended_nwp_vars is None and cfg.nwp_test_set:
+        extended_nwp_vars = ["ew_wind", "nw_wind"]
+    
+    dataset = PeakWeather(**hparams, 
+                          extended_nwp_vars=extended_nwp_vars,
+                          extended_topo_vars=extended_topo_vars)
     # Get connectivity
     adj = dataset.get_connectivity(**cfg.dataset.connectivity)
     # Get mask

@@ -1,0 +1,18 @@
+# @package _global_
+#### Model params #############################################################
+
+model:
+  name: hydrology_temp
+  hparams:
+    hidden_size: 64
+    emb_size: 16
+    time_layers: 2
+    graph_layers: 2
+    add_embedding_before: ["encoding", "message_passing"]
+    norm: sym           # isotropic symmetric normalization
+    root_weight: true
+    add_backward: false # set true to use directed diffusion conv
+    cached: false
+    activation: elu
+    noise_mode: lin     # linear noise head for probabilistic readout
+    time_skip_connect: true

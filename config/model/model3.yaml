@@ -1,0 +1,20 @@
+# @package _global_
+
+#### Model params #############################################################
+model:
+  name: model3
+  hparams:
+    hidden_size: 256
+    emb_size: 32
+    add_embedding_before: ['encoding', 'message_passing', 'decoding']
+    time_layers: 2
+    graph_layers: 9
+    activation: 'relu'
+    noise_mode: 'lin'
+    time_skip_connect: True
+
+dataset:
+  connectivity:
+    layout: csr
+
+

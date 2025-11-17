@@ -1,0 +1,13 @@
+# @package _global_
+
+model:
+  name: model1
+  hparams:
+    hidden_size: 128
+    emb_size: 32
+    add_embedding_before: ['encoding', 'decoding']
+    use_local_weights: null   # or ['encoder', 'decoder'] or null
+    time_layers: 2
+    activation: 'elu'
+    noise_mode: 'lin'
+    time_skip_connect: true

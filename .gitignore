@@ -1,0 +1,25 @@
+
+
+# Data files (large datasets)
+data/
+*.parquet
+*.h5
+*.hdf5
+*.csv
+*.tsv
+
+# Logs and outputs
+logs/
+outputs/
+*.log
+
+mlruns/
+lib/metrics/
+lib/datasets/__pycache__
+lib/__pycache__
+lib/nn/__pycache__
+lib/nn/models/baselines/__pycache__
+lib/nn/models/__pycache__
+lib/nn/models/learnable_models/__pycache__
+lib/nn/predictors/__pycache__
+lib/nn/layers/__pycache__

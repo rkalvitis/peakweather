@@ -1,0 +1,60 @@
+# @package _global_
+
+#### Dataset params ###########################################################
+dataset:
+  name: temperature
+  hparams:
+    root: ./data/PeakWeather  # MeteoSwiss
+    target_channels: [ "temperature" ] # [wind_direction, wind_speed, wind_gust]
+    covariate_channels: "other"  # "other", null
+    freq: "h" # "h", null
+    station_type: 'meteo_station'
+    extended_nwp_vars: ["ew_wind", "humidity", "nw_wind", "precipitation", "pressure", "sunshine", "temperature", "wind_gust"]
+    extended_topo_vars: ["ASPECT_10000M_SIGRATIO1", "ASPECT_2000M_SIGRATIO1", "DEM", "SLOPE_10000M_SIGRATIO1", "SLOPE_2000M_SIGRATIO1", "SN_DERIVATIVE_10000M_SIGRATIO1", "SN_DERIVATIVE_2000M_SIGRATIO1", "STD_10000M", "STD_2000M", "TPI_10000M", "TPI_2000M", "WE_DERIVATIVE_10000M_SIGRATIO1", "WE_DERIVATIVE_2000M_SIGRATIO1"]
+  zerowind: 1.0  # wind speed cutoff of 1m/s
+  splitting:
+    first_val_ts: [ 2024, 01, 01 ]
+    first_test_ts: [ 2024, 04, 01 ]
+  connectivity:
+    # method: distance
+    threshold: 0.7
+    theta: null
+    include_self: False
+    knn: 8
+    layout: csr
+  covariates:
+    year: True
+    day: True
+    weekday: True
+    mask: True
+    u_mask: True
+    v: True
+  static_attributes:
+    - latitude
+    - longitude
+#    - swiss_easting
+#    - swiss_northing
+    - station_height
+    - ASPECT_10000M_SIGRATIO1
+    - ASPECT_2000M_SIGRATIO1
+    - dem
+    - SLOPE_10000M_SIGRATIO1
+    - SLOPE_2000M_SIGRATIO1
+    - SN_DERIVATIVE_10000M_SIGRATIO1
+    - SN_DERIVATIVE_2000M_SIGRATIO1
+    - STD_10000M
+    - STD_2000M
+    - TPI_10000M
+    - TPI_2000M
+    - WE_DERIVATIVE_10000M_SIGRATIO1
+    - WE_DERIVATIVE_2000M_SIGRATIO1
+
+#### Windowing params #########################################################
+window: 168
+horizon: 24
+stride: 1
+
+scaler:
+  method: Standard
+  axis: graph
+  scale_target: True
