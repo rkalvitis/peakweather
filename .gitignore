@@ -9,12 +9,12 @@ data/
 *.tsv
 
 # Logs and outputs
-logs/
-outputs/
-*.log
+#logs/
+#outputs/
+#*.log
 
-mlruns/
-lib/metrics/
+#mlruns/
+#lib/metrics/
 lib/datasets/__pycache__
 lib/__pycache__
 lib/nn/__pycache__
