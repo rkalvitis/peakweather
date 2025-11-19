@@ -3,7 +3,9 @@ from .learnable_models import (
     TimeThenSpace,
     TimeAndSpace,
     TimeThenGraphIsoModel,
-    GlobalLocalRNNModel
+    GlobalLocalRNNModel,
+    TransformerSpatioTemporalGAT,
+    AttentionLongTermSTGNN,
 )
 from .baselines.persistence import PersistenceModel
 from .baselines.icon import ICONData, ICONDummyModel

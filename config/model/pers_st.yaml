@@ -1,7 +1,0 @@
-# @package _global_
-
-#### Model params #############################################################
-model:
-  name: pers_st
-  hparams: 
-    lag: 1  # keep the last observation

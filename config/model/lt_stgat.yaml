@@ -1,0 +1,25 @@
+# @package _global_
+
+#### Model params #############################################################
+model:
+  name: lt_stgat
+  hparams:
+    transformer_d_model: 128
+    transformer_heads: 4
+    transformer_layers: 2
+    transformer_ff_size: 256
+    dropout: 0.5
+    segment_length: 24
+    max_segments: 32
+    segments_per_day: 24
+    days_per_cycle: 7
+    long_term_kernel_sizes: [3, 5, 7, 9]
+    long_term_dilations: [1, 2, 3, 4]
+    short_window: 24
+    short_hidden_size: 96
+    short_graph_layers: 2
+    short_time_layers: 1
+    graph_activation: relu
+    graph_norm: sym
+    graph_root_weight: true
+    graph_cached: false

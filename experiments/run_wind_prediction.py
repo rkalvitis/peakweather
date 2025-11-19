@@ -58,6 +58,12 @@ def get_model_class(model_str):
     elif model_str == 'stgcn_lstm_longh':
         # Exact Graph->Time pipeline: STGCN then LSTM then FC
         model = models.STGCN_LSTM
+    elif model_str == 'lt_stgat':
+        # Transformer-based Spatiotemporal Graph Attention Network
+        model = models.TransformerSpatioTemporalGAT
+    elif model_str == 'attn_longterm':
+        # Attention-based STGNN with learned long-term graph dependencies
+        model = models.AttentionLongTermSTGNN
     else:
         raise NotImplementedError(f'Model "{model_str}" not available.')
     return model
