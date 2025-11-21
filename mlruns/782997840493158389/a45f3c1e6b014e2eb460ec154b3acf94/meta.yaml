@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jupyter/peakweather/mlruns/782997840493158389/a45f3c1e6b014e2eb460ec154b3acf94/artifacts
+deleted_time: 1763733533346
+end_time: null
+entry_point_name: ''
+experiment_id: '782997840493158389'
+lifecycle_stage: deleted
+run_id: a45f3c1e6b014e2eb460ec154b3acf94
+run_name: traveling-midge-14
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763731715302
+status: 1
+tags: []
+user_id: rkalv

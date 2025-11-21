@@ -295,8 +295,15 @@ def run(cfg: DictConfig):
     lr_monitor = LearningRateMonitor(logging_interval='step')
 
     # Will place the logs in ./mlruns
-    exp_logger = MLFlowLogger(experiment_name=cfg.experiment_name, tracking_uri=cfg.mlflow_tracking_uri)
-
+    exp_logger = MLFlowLogger(
+        experiment_name=cfg.experiment_name, 
+        tracking_uri=cfg.mlflow_tracking_uri,
+        run_name=f"Random seed: {cfg.run.seed}",
+        tags={  # optional, goes to the “Tags” section in UI
+        "model": cfg.model.name,
+        "dataset": cfg.dataset.name,
+        }
+        )
     trainer = Trainer(max_epochs=cfg.epochs,
                       limit_train_batches=cfg.train_batches,
                       default_root_dir=cfg.run.dir,
@@ -314,6 +321,21 @@ def run(cfg: DictConfig):
                         train_dataloaders=dm.train_dataloader(),
                         val_dataloaders=dm.val_dataloader())
             predictor.load_model(checkpoint_callback.best_model_path)
+
+
+    import mlflow
+    import mlflow.pytorch
+
+    # use the run created by MLFlowLogger
+    mlflow.set_tracking_uri(cfg.mlflow_tracking_uri)
+
+    with mlflow.start_run(run_id=exp_logger.run_id):
+        mlflow.pytorch.log_model(
+            predictor.model,
+            artifact_path=cfg.model.name,
+            # optional: also register it
+            registered_model_name=f"{cfg.dataset.name}_{cfg.model.name}",
+        )
 
     predictor.freeze()
 

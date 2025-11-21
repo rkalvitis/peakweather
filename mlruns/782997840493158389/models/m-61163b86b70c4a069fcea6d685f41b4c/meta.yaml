@@ -1,0 +1,10 @@
+artifact_location: file:///home/jupyter/peakweather/mlruns/782997840493158389/models/m-61163b86b70c4a069fcea6d685f41b4c/artifacts
+creation_timestamp: 1763733559977
+experiment_id: '782997840493158389'
+last_updated_timestamp: 1763733566811
+model_id: m-61163b86b70c4a069fcea6d685f41b4c
+model_type: null
+name: lt_stgat
+source_run_id: 1c391ee5ef434996842f55e61764fd59
+status: 2
+status_message: null

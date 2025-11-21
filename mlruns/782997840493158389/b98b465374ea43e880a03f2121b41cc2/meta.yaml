@@ -1,0 +1,15 @@
+artifact_uri: file:///home/jupyter/peakweather/mlruns/782997840493158389/b98b465374ea43e880a03f2121b41cc2/artifacts
+deleted_time: 1763733533346
+end_time: 1763733230165
+entry_point_name: ''
+experiment_id: '782997840493158389'
+lifecycle_stage: deleted
+run_id: b98b465374ea43e880a03f2121b41cc2
+run_name: 'Random seed: 674329721'
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763733173145
+status: 4
+tags: []
+user_id: rkalv

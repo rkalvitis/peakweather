@@ -1,0 +1,10 @@
+artifact_location: file:///home/jupyter/peakweather/mlruns/0/models/m-e178a6805eea4b7d99dfcbf0987047d1/artifacts
+creation_timestamp: 1763731844318
+experiment_id: '0'
+last_updated_timestamp: 1763731851441
+model_id: m-e178a6805eea4b7d99dfcbf0987047d1
+model_type: null
+name: model
+source_run_id: null
+status: 2
+status_message: null
