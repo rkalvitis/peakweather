@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/72e830481213498ba3e8557f020db96f/artifacts
+deleted_time: 1763545552989
+end_time: 1762780239251
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 72e830481213498ba3e8557f020db96f
+run_name: unleashed-ray-498
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762780149023
+status: 4
+tags: []
+user_id: rkalv

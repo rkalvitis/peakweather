@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/627b33affa7a4cc4b45f811423fe2c8c/artifacts
+end_time: 1763545875801
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: active
+run_id: 627b33affa7a4cc4b45f811423fe2c8c
+run_name: thundering-elk-894
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763545836660
+status: 4
+tags: []
+user_id: rkalv

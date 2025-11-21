@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/91b9cecc25944f2b87b6b0b002265eda/artifacts
+deleted_time: 1762779504630
+end_time: null
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 91b9cecc25944f2b87b6b0b002265eda
+run_name: clumsy-loon-102
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762683595281
+status: 1
+tags: []
+user_id: rkalv

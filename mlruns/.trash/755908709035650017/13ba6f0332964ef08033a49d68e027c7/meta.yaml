@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/755908709035650017/13ba6f0332964ef08033a49d68e027c7/artifacts
+deleted_time: 1763545472274
+end_time: 1762336664926
+entry_point_name: ''
+experiment_id: '755908709035650017'
+lifecycle_stage: deleted
+run_id: 13ba6f0332964ef08033a49d68e027c7
+run_name: bittersweet-hare-765
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762336338201
+status: 4
+tags: []
+user_id: rkalv

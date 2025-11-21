@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/766a355ec1c0461ea2cae0f71185b8d0/artifacts
+deleted_time: 1763545552987
+end_time: 1762692865400
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 766a355ec1c0461ea2cae0f71185b8d0
+run_name: mysterious-hawk-574
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762688980760
+status: 3
+tags: []
+user_id: rkalv

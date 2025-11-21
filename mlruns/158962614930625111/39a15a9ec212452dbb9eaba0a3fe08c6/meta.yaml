@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/39a15a9ec212452dbb9eaba0a3fe08c6/artifacts
+deleted_time: 1763545552975
+end_time: 1763026952531
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 39a15a9ec212452dbb9eaba0a3fe08c6
+run_name: polite-crow-433
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763026951141
+status: 4
+tags: []
+user_id: rkalv

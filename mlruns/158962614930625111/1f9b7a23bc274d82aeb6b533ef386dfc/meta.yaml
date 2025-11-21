@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/1f9b7a23bc274d82aeb6b533ef386dfc/artifacts
+deleted_time: 1762779504624
+end_time: 1762769328787
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 1f9b7a23bc274d82aeb6b533ef386dfc
+run_name: thundering-whale-276
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762769328329
+status: 4
+tags: []
+user_id: rkalv

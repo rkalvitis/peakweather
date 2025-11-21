@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/8594b33a294b4a11b316ca4e8e5d1285/artifacts
+deleted_time: 1763545552967
+end_time: 1763027548414
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 8594b33a294b4a11b316ca4e8e5d1285
+run_name: mercurial-toad-264
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763027546734
+status: 4
+tags: []
+user_id: rkalv

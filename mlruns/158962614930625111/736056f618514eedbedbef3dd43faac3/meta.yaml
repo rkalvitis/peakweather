@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/736056f618514eedbedbef3dd43faac3/artifacts
+deleted_time: 1763545552988
+end_time: 1762778808355
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 736056f618514eedbedbef3dd43faac3
+run_name: indecisive-lark-937
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762769660109
+status: 3
+tags: []
+user_id: rkalv

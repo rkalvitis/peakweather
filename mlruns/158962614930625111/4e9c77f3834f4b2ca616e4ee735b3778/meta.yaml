@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/4e9c77f3834f4b2ca616e4ee735b3778/artifacts
+deleted_time: 1762779504632
+end_time: 1762682030893
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 4e9c77f3834f4b2ca616e4ee735b3778
+run_name: omniscient-wren-740
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762681990588
+status: 4
+tags: []
+user_id: rkalv

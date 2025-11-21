@@ -1,0 +1,110 @@
+[2025-11-10 11:00:33,130][tsl][INFO] - 
+**** Experiment config ****
+experiment_name: peakweather_temperature
+mlflow_tracking_uri: null
+workers: 0
+num_threads: 1
+epochs: 200
+patience: 50
+batch_size: 32
+train_batches: 300
+grad_clip_val: 5
+loss_fn: ens
+sampling:
+  mc_samples_train: 16
+  mc_samples_eval: 11
+  mc_samples_test: 100
+optimizer:
+  name: Adam
+  hparams:
+    lr: 0.001
+nwp_test_set: false
+dataset:
+  name: temperature
+  hparams:
+    root: ./data/PeakWeather
+    target_channels:
+    - temperature
+    covariate_channels: other
+    freq: h
+    station_type: meteo_station
+  zerowind: 1.0
+  splitting:
+    first_val_ts:
+    - 2024
+    - 1
+    - 1
+    first_test_ts:
+    - 2024
+    - 4
+    - 1
+  connectivity:
+    threshold: 0.7
+    theta: null
+    include_self: false
+    knn: 8
+    layout: csr
+  covariates:
+    year: true
+    day: true
+    weekday: false
+    mask: true
+    u_mask: true
+    v: true
+  static_attributes:
+  - latitude
+  - longitude
+  - station_height
+  - ASPECT_2000M_SIGRATIO1
+  - WE_DERIVATIVE_2000M_SIGRATIO1
+  - TPI_2000M
+  - SN_DERIVATIVE_10000M_SIGRATIO1
+  - dem
+  - SN_DERIVATIVE_2000M_SIGRATIO1
+  - SLOPE_10000M_SIGRATIO1
+  - ASPECT_10000M_SIGRATIO1
+  - SLOPE_2000M_SIGRATIO1
+  - STD_2000M
+  - STD_10000M
+  - TPI_10000M
+  - WE_DERIVATIVE_10000M_SIGRATIO1
+window: 72
+horizon: 24
+stride: 1
+scaler:
+  method: Standard
+  axis: graph
+  scale_target: false
+model:
+  name: model2
+  hparams:
+    hidden_size: 128
+    emb_size: 32
+    add_embedding_before:
+    - encoding
+    - decoding
+    use_local_weights: null
+    root_weight: true
+    time_layers: 2
+    graph_layers: 6
+    add_backward: false
+    norm: sym
+    cached: false
+    activation: elu
+    noise_mode: lin
+    time_skip_connect: true
+lr_scheduler:
+  name: MultiStepLR
+  hparams:
+    gamma: 0.3
+    milestones:
+    - 40
+    - 60
+    - 100
+run:
+  seed: 435260129
+  dir: C:\Users\rkalv\Desktop\meteoSwiss\peakweather-wind-forecasting\logs\temperature\model2\2025-11-10\11-00-33
+  name: 2025-11-10_11-00-33_435260129
+
+[2025-11-10 11:00:44,556][tsl][INFO] - Fit and set scaler for target: StandardScaler(bias=(1, 1, 1), scale=(1, 1, 1))
+[2025-11-10 11:00:45,763][tsl][WARNING] - Only args ['u', 'edge_index', 'x', 'mc_samples'] are forwarded to the model (TimeThenGraphIsoModel).

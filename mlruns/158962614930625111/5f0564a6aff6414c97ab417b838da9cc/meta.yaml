@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/5f0564a6aff6414c97ab417b838da9cc/artifacts
+deleted_time: 1763545552972
+end_time: 1763026984212
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 5f0564a6aff6414c97ab417b838da9cc
+run_name: bedecked-newt-892
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763026982809
+status: 4
+tags: []
+user_id: rkalv

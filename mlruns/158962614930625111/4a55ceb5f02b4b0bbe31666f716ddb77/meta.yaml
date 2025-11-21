@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/4a55ceb5f02b4b0bbe31666f716ddb77/artifacts
+deleted_time: 1763545552975
+end_time: 1763023287179
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 4a55ceb5f02b4b0bbe31666f716ddb77
+run_name: welcoming-gull-177
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763023247089
+status: 4
+tags: []
+user_id: rkalv

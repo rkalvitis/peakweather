@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/1a63abaabd55446c820798807647728c/artifacts
+deleted_time: 1763545552995
+end_time: 1762935561913
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 1a63abaabd55446c820798807647728c
+run_name: adventurous-mare-865
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762924012426
+status: 4
+tags: []
+user_id: rkalv

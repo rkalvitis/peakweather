@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/e584bdf5255440ab8364b4c4e67666bc/artifacts
+deleted_time: 1763545552983
+end_time: 1762686166561
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: e584bdf5255440ab8364b4c4e67666bc
+run_name: glamorous-pug-915
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762684111144
+status: 3
+tags: []
+user_id: rkalv

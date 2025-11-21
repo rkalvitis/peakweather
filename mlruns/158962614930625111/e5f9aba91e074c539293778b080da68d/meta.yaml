@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/e5f9aba91e074c539293778b080da68d/artifacts
+deleted_time: 1763545552983
+end_time: 1763021260321
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: e5f9aba91e074c539293778b080da68d
+run_name: silent-stag-698
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762939475329
+status: 4
+tags: []
+user_id: rkalv

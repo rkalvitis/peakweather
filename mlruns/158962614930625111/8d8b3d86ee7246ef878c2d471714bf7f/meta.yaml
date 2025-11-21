@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/8d8b3d86ee7246ef878c2d471714bf7f/artifacts
+deleted_time: 1762779504630
+end_time: null
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 8d8b3d86ee7246ef878c2d471714bf7f
+run_name: dazzling-hare-193
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762682152817
+status: 1
+tags: []
+user_id: rkalv

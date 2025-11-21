@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/d0e9de870f6f42089d84215dbe064a55/artifacts
+deleted_time: 1763545552967
+end_time: 1763027607702
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: d0e9de870f6f42089d84215dbe064a55
+run_name: abrasive-chimp-443
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763027607263
+status: 4
+tags: []
+user_id: rkalv

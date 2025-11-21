@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/779b6872d37e4e5fadfcc70a3ee18447/artifacts
+deleted_time: 1763545552991
+end_time: 1762807335324
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 779b6872d37e4e5fadfcc70a3ee18447
+run_name: wistful-hound-930
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762780270860
+status: 3
+tags: []
+user_id: rkalv

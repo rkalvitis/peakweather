@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/31723fe89b8b45d7a4ec0ef9183ebce6/artifacts
+deleted_time: 1763545552980
+end_time: null
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 31723fe89b8b45d7a4ec0ef9183ebce6
+run_name: upbeat-whale-67
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762972946348
+status: 1
+tags: []
+user_id: rkalv

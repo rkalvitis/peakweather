@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/3db8e50af03340558066cf43b283aa3c/artifacts
+deleted_time: 1763545552991
+end_time: 1762888445591
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 3db8e50af03340558066cf43b283aa3c
+run_name: fortunate-tern-776
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762887387603
+status: 4
+tags: []
+user_id: rkalv

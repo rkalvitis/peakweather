@@ -1,0 +1,129 @@
+[2025-11-13 09:40:33,350][tsl][INFO] - 
+**** Experiment config ****
+experiment_name: peakweather_temperature
+mlflow_tracking_uri: null
+workers: 10
+num_threads: 10
+pin_memory: true
+persistent_workers: true
+prefetch_factor: 4
+epochs: 200
+patience: 30
+batch_size: 32
+train_batches: 300
+grad_clip_val: 5
+loss_fn: ens
+sampling:
+  mc_samples_train: 16
+  mc_samples_eval: 11
+  mc_samples_test: 100
+optimizer:
+  name: Adam
+  hparams:
+    lr: 0.0005
+nwp_test_set: false
+dataset:
+  name: temperature
+  hparams:
+    root: ./data/PeakWeather
+    target_channels:
+    - temperature
+    covariate_channels: other
+    freq: h
+    station_type: meteo_station
+    extended_nwp_vars:
+    - ew_wind
+    - humidity
+    - nw_wind
+    - precipitation
+    - pressure
+    - sunshine
+    - temperature
+    - wind_gust
+    extended_topo_vars:
+    - ASPECT_10000M_SIGRATIO1
+    - ASPECT_2000M_SIGRATIO1
+    - DEM
+    - SLOPE_10000M_SIGRATIO1
+    - SLOPE_2000M_SIGRATIO1
+    - SN_DERIVATIVE_10000M_SIGRATIO1
+    - SN_DERIVATIVE_2000M_SIGRATIO1
+    - STD_10000M
+    - STD_2000M
+    - TPI_10000M
+    - TPI_2000M
+    - WE_DERIVATIVE_10000M_SIGRATIO1
+    - WE_DERIVATIVE_2000M_SIGRATIO1
+  zerowind: 1.0
+  splitting:
+    first_val_ts:
+    - 2024
+    - 1
+    - 1
+    first_test_ts:
+    - 2024
+    - 4
+    - 1
+  connectivity:
+    threshold: 0.7
+    theta: null
+    include_self: false
+    knn: 8
+    layout: csr
+  covariates:
+    year: true
+    day: true
+    weekday: true
+    mask: true
+    u_mask: true
+    v: true
+  static_attributes:
+  - latitude
+  - longitude
+  - station_height
+  - ASPECT_10000M_SIGRATIO1
+  - ASPECT_2000M_SIGRATIO1
+  - dem
+  - SLOPE_10000M_SIGRATIO1
+  - SLOPE_2000M_SIGRATIO1
+  - SN_DERIVATIVE_10000M_SIGRATIO1
+  - SN_DERIVATIVE_2000M_SIGRATIO1
+  - STD_10000M
+  - STD_2000M
+  - TPI_10000M
+  - TPI_2000M
+  - WE_DERIVATIVE_10000M_SIGRATIO1
+  - WE_DERIVATIVE_2000M_SIGRATIO1
+window: 168
+horizon: 24
+stride: 1
+scaler:
+  method: Standard
+  axis: graph
+  scale_target: true
+model:
+  name: stgcn_lstm
+  hparams:
+    hidden_size: 128
+    graph_layers: 2
+    lstm_hidden_size: 128
+    lstm_layers: 2
+    activation: relu
+    norm: sym
+    root_weight: true
+    cached: false
+lr_scheduler:
+  name: MultiStepLR
+  hparams:
+    gamma: 0.3
+    milestones:
+    - 40
+    - 60
+    - 100
+run:
+  seed: 762973692
+  dir: C:\Users\rkalv\Desktop\meteoSwiss\peakweather-wind-forecasting\logs\temperature\stgcn_lstm\2025-11-13\09-40-33
+  name: 2025-11-13_09-40-33_762973692
+
+[2025-11-13 09:40:46,066][tsl][INFO] - Fit and set scaler for target: StandardScaler(bias=(1, 1, 1), scale=(1, 1, 1))
+[2025-11-13 09:41:22,174][tsl][WARNING] - Only args ['u', 'x', 'edge_index', 'mc_samples'] are forwarded to the model (STGCN_LSTM).

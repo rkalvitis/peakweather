@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/dddfbe4c0a8b4a74a97ed88b1bbcce79/artifacts
+deleted_time: 1763545552969
+end_time: 1763027576935
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: dddfbe4c0a8b4a74a97ed88b1bbcce79
+run_name: enthused-stoat-573
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763027575510
+status: 4
+tags: []
+user_id: rkalv

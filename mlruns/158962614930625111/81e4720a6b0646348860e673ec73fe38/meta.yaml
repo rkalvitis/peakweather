@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/81e4720a6b0646348860e673ec73fe38/artifacts
+deleted_time: 1762779504625
+end_time: null
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 81e4720a6b0646348860e673ec73fe38
+run_name: masked-sloth-623
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762687761781
+status: 1
+tags: []
+user_id: rkalv

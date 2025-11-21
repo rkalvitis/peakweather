@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/5834d901fd2a4294bcf4a211f7eaecf2/artifacts
+end_time: 1763474668682
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: active
+run_id: 5834d901fd2a4294bcf4a211f7eaecf2
+run_name: receptive-mole-339
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763468142816
+status: 3
+tags: []
+user_id: rkalv

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/9b5f2f2b525340628481c09ca5985580/artifacts
+deleted_time: 1763545552965
+end_time: 1763383940481
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 9b5f2f2b525340628481c09ca5985580
+run_name: melodic-gnat-959
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763383872583
+status: 3
+tags: []
+user_id: rkalv

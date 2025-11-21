@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/6f1a4628487c4f0c86dadfb9474f3cd2/artifacts
+end_time: 1763461028194
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: active
+run_id: 6f1a4628487c4f0c86dadfb9474f3cd2
+run_name: intelligent-mink-617
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763456785015
+status: 3
+tags: []
+user_id: rkalv

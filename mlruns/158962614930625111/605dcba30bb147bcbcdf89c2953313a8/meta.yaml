@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/rkalv/Desktop/meteoSwiss/peakweather-wind-forecasting/mlruns/158962614930625111/605dcba30bb147bcbcdf89c2953313a8/artifacts
+deleted_time: 1763545552991
+end_time: 1762884883697
+entry_point_name: ''
+experiment_id: '158962614930625111'
+lifecycle_stage: deleted
+run_id: 605dcba30bb147bcbcdf89c2953313a8
+run_name: beautiful-mink-667
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1762853844883
+status: 3
+tags: []
+user_id: rkalv
