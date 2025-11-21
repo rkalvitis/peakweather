@@ -1,0 +1,14 @@
+artifact_uri: file:///home/jupyter/peakweather/mlruns/782997840493158389/fc33f2d31d6d42dd9ebf95756be9192a/artifacts
+end_time: 1763390331092
+entry_point_name: ''
+experiment_id: '782997840493158389'
+lifecycle_stage: active
+run_id: fc33f2d31d6d42dd9ebf95756be9192a
+run_name: grandiose-donkey-888
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763390295458
+status: 4
+tags: []
+user_id: jupyter

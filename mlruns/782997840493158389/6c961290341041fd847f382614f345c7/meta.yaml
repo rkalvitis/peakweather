@@ -1,0 +1,14 @@
+artifact_uri: file:///home/jupyter/peakweather/mlruns/782997840493158389/6c961290341041fd847f382614f345c7/artifacts
+end_time: 1763554269706
+entry_point_name: ''
+experiment_id: '782997840493158389'
+lifecycle_stage: active
+run_id: 6c961290341041fd847f382614f345c7
+run_name: luxuriant-shark-106
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763546445874
+status: 3
+tags: []
+user_id: jupyter

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/jupyter/peakweather/mlruns/782997840493158389/fb670cbde7f040c6ad51d90a08d653b0/artifacts
+end_time: 1763402245938
+entry_point_name: ''
+experiment_id: '782997840493158389'
+lifecycle_stage: active
+run_id: fb670cbde7f040c6ad51d90a08d653b0
+run_name: dapper-snail-734
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763390385096
+status: 3
+tags: []
+user_id: jupyter

@@ -1,0 +1,33 @@
+# @package _global_
+#### Model params #############################################################
+
+model:
+  name: stgcn_lstm
+  hparams:
+    hidden_size: 128        # width after graph convs (STGCN)
+    graph_layers: 2         # number of spatial graph conv layers
+    lstm_hidden_size: 128   # LSTM hidden size
+    lstm_layers: 2          # LSTM depth
+    activation: relu
+    norm: sym
+    root_weight: true
+    cached: false
+
+# Deterministic FC readout: prioritize point loss
+#loss_fn: mae
+
+# Longer look-back to capture diurnal/weekly patterns
+window: 168
+
+# Enable weekday one-hot covariate
+dataset:
+  covariates:
+    weekday: true
+
+# Slower LR and longer patience for deeper model
+optimizer:
+  name: Adam
+  hparams:
+    lr: 0.0005
+patience: 30
+

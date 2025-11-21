@@ -1,0 +1,6 @@
+artifact_location: file:///home/jupyter/peakweather/mlruns/782997840493158389
+creation_time: 1763383964792
+experiment_id: '782997840493158389'
+last_update_time: 1763383964792
+lifecycle_stage: active
+name: peakweather_temperature

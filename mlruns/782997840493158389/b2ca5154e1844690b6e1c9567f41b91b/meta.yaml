@@ -1,0 +1,14 @@
+artifact_uri: file:///home/jupyter/peakweather/mlruns/782997840493158389/b2ca5154e1844690b6e1c9567f41b91b/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '782997840493158389'
+lifecycle_stage: active
+run_id: b2ca5154e1844690b6e1c9567f41b91b
+run_name: carefree-gnat-371
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763386842671
+status: 1
+tags: []
+user_id: jupyter

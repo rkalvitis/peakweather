@@ -1,0 +1,17 @@
+# @package _global_
+#### Model params #############################################################
+
+model:
+  name: stgcn_lstm
+  hparams:
+    hidden_size: 64         # width after graph convs (STGCN)
+    graph_layers: 2         # number of spatial graph conv layers
+    lstm_hidden_size: 64    # LSTM hidden size
+    lstm_layers: 1          # LSTM depth
+    activation: relu
+    norm: sym
+    root_weight: true
+    cached: false
+
+# Deterministic FC readout: use point loss
+#loss_fn: mae

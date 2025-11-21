@@ -14,8 +14,8 @@ mlflow_tracking_uri: null
 
 #load_model_path: logs\Temperature\stgcn_lstm\2025-11-12\10-24-17\epoch=49-step=15000.ckpt
 
-workers: 0
-num_threads: 1
+workers: 4
+num_threads: 4
 
 #### Training params ##########################################################
 epochs: 200

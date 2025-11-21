@@ -1,0 +1,14 @@
+artifact_uri: file:///home/jupyter/peakweather/mlruns/782997840493158389/6269deade8b44bc1adc563daffc96e4e/artifacts
+end_time: 1763583471622
+entry_point_name: ''
+experiment_id: '782997840493158389'
+lifecycle_stage: active
+run_id: 6269deade8b44bc1adc563daffc96e4e
+run_name: abundant-penguin-216
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763554857032
+status: 3
+tags: []
+user_id: jupyter

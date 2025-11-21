@@ -1,0 +1,39 @@
+defaults:
+  - _self_
+  - dataset: temperature
+  - model: tts_imp
+  - lr_scheduler: multistep
+
+#### Experiment params ########################################################
+hydra:
+  run:
+    dir: logs/${dataset.name}/${model.name}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+experiment_name: peakweather_temperature
+mlflow_tracking_uri: null
+
+#load_model_path: logs\Temperature\stgcn_lstm\2025-11-12\10-24-17\epoch=49-step=15000.ckpt
+
+workers: 4
+num_threads: 4
+
+#### Training params ##########################################################
+epochs: 200
+patience: 50
+batch_size: 32
+train_batches: 300  # 1.0
+grad_clip_val: 5
+
+loss_fn: mae
+
+sampling:
+  mc_samples_train: 16
+  mc_samples_eval: 11
+  mc_samples_test: 100
+
+optimizer:
+  name: Adam
+  hparams:
+    lr: 0.001
+
+nwp_test_set: False

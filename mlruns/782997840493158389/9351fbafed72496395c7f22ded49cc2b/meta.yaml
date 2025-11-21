@@ -1,0 +1,14 @@
+artifact_uri: file:///home/jupyter/peakweather/mlruns/782997840493158389/9351fbafed72496395c7f22ded49cc2b/artifacts
+end_time: 1763390098559
+entry_point_name: ''
+experiment_id: '782997840493158389'
+lifecycle_stage: active
+run_id: 9351fbafed72496395c7f22ded49cc2b
+run_name: gaudy-mink-112
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763389937199
+status: 4
+tags: []
+user_id: jupyter
