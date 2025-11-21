@@ -23,35 +23,9 @@ from lib.nn.predictors import Predictor, SamplingPredictor
 
 def get_model_class(model_str):
     # Forecasting models  ###############################################
-    if model_str == 'tts_imp':
-        model = models.TimeThenGraphIsoModel
-    elif model_str == 'rnn_glob':
-        model = models.GlobalLocalRNNModel
-    elif model_str == 'rnn_emb':
-        model = models.GlobalLocalRNNModel
-    elif model_str == 'pers_st':
-        model = models.PersistenceModel
-    elif model_str == 'pers_day':
-        model = models.PersistenceModel
-    elif model_str == 'icon':
-        model = ICONDummyModel
-    elif model_str == 'rnn':
-        model = tsl_models.RNNModel
-    elif model_str == 'model0':
-        model = models.SimpleGRUBaseline
-    elif model_str == 'model1':
-        model = models.GlobalLocalRNNModel
-    elif model_str == 'model2':
-        # Baseline STGNN: Time-then-Graph isotropic model
-        model = models.TimeThenGraphIsoModel
-    elif model_str == 'model3':
-        # GNN Encoder-Processor-Decoder style via isotropic time-then-graph model
-        model = models.TimeThenGraphIsoModel
-    elif model_str == 'stgnn':
+    if model_str == 'stgnn':
         # Generic SpatioTemporal GNN: time-then-graph isotropic variant
         model = models.TimeThenGraphIsoModel
-    elif model_str == 'hydrology_temp':
-        model = models.HydrologyTempModel
     elif model_str == 'stgcn_lstm':
         # Exact Graph->Time pipeline: STGCN then LSTM then FC
         model = models.STGCN_LSTM
